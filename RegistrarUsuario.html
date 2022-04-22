@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>BodSystem</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&display=swap" rel="stylesheet">
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="Catalogo/Botones.css">
+        <script>
+        function redireccionar(){location.href="Login.html";}
+    </script>
+    </head>
+    <body>
+        <form action="RegistrarUsuario.php" method="POST">
+            <!-- Formulario -->
+            <h1><i>BODSYSTEM</i></h1><hr>
+    
+            <h2 style="font-family:Verdana;" align="center">
+                <i>REGISTRO DE USUARIO</i></h2><hr>
+            <p><strong>Ingresar Usuario</strong></p>
+            <input name="Usuario" type="text" required><br>
+            <p><strong>Ingresar Contraseña (Formato con el siguiente orden: Minimo 2 numeros, 2 simbolos, 1 letra mayuscula)</strong></p>
+            <input name="Clave" type="password" pattern="^\d{2,5}[#$%&/?]{2,5}[A-Z]{1,4}\w{0,3}$" required><br>
+            <center><input type="submit" value="REGISTRAR" name="Registrar" class="btn fourth"></center>
+            <center><input type="reset" value="CANCELAR" class="btn fourth"></center>
+            <center><input type="button" value="REGRESAR" onclick="redireccionar()" class="btn fourth"></center><hr>
+            <!--<a href="Cerrar_Sesion.php">Cerrar Sesion</a><hr>-->
+        </form>
+        <footer>
+            <p><small>Autores: Arian Ticona Flores y Brandon Jesús Quispe Pacherre</small></p>
+            <p><small><a href="https://sistemas.unmsm.edu.pe/site/index.php" target="blank">Universidad Nacional Mayor de San Marcos - Facultad de Ingenieria de Sistemas</a></small></p>
+        </footer>
+    </body>
+</html>
